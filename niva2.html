@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivå 2</title>
+    <script src="Js/jsnivaAlla.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!--Här är popup fönstret som kommer upp i slutet på varje nivå-->
+  <section id="popupCorrect2" style="display: none;">
+    <div class="popup">
+      <h2>Grattis!</h2>
+      <div class="content">
+        Du klarade nivå 2 och har därmed låst upp nivå 3!
+      </div>
+    </div>
+  </section>
+  <section id="popupIncorrect2" style="display: none;">
+    <div class="popup">
+      <div class="content">
+        Du måste få 6 rätt och 0 fel för att låsa upp nivå 3!
+      </div>
+    </div>
+  </section>
+
+  <a href="Forstasida.html" class="tillbakaForstasida" id="tillbakaButton">Tillbaka till förstasidan</a>
+    <main id="email" class="flex-container">
+
+      <!--Här är headern för varje nivå-->
+      <header id="headerWebbsida" class="headerOvanMail">
+        <div class="headerContentWrapper">
+        <h2 class="nivaText">Nivå 2</h2>
+        <p class="markeraText">Markera vart det ser suspekt ut i mailet</p>
+        </div>
+      </header>
+
+      <!--Här är email nummer 1-->
+      <article id="email3-body" class="emailBodyClass1">
+       <header id="email3-header">
+        <h1>Viaplay</h1>
+        <p>Från: <span id="clickableText8" class="clickableTexts">viaplaysupport@gmail.com<span class="highlight-trigger" data-target="clickableText8">+</span></span><br>
+         <br>
+         Ämne: Viktigt Meddelande: Problem med Ditt Viaplay-Betalningskonto
+        </p>
+        <img id="loggaEmail3" src="Viaplay_logo.png" alt="Viaplay logga">
+       </header>
+       <div id="email3-content">
+        <section id="textEmail3">Vi hoppas att detta meddelande når dig väl. Vi har nyligen mottagit en notifikation om att din <span id="clickableText9" class="clickableTexts">senaste betalning för Viaplay har nekats på grund av ogiltiga betalningsuppgifter<span class="highlight-trigger" data-target="clickableText9">+</span></span><br>
+         <br>
+         För att undvika avbrott i din Viaplay-tjänst och för att åtgärda detta problem<span id="clickableText10" class="clickableTexts">. b<span class="highlight-trigger" data-target="clickableText10">+</span></span>er vi dig vänligen verifiera och uppdatera dina betalningasuppgifter genom att klicka här:
+         <span id="clickableText11" class="clickableTexts"><u>www.viablay.se</u><span class="highlight-trigger" data-target="clickableText11">+</span></span>
+         <div id="fakeURL3">http://viablay.se/duförloraralladinapengar</div>
+         <br>
+         Din snabba åtgärd kommer att säkerställa att du kan fortsätta njuta av alla fördelar med ditt Viaplay-konto utan avbrott.
+         <br>
+         <br>
+         Vänliga hälsningar, Viaplay Betalningssupport
+        </section>
+       </div>
+      </article>
+
+      
+      <!--Här är resultat rutan och tips rutan -->
+      <section id="resultatRuta3" class="ruta">
+        <div class="ruta-content">
+          <p id="resultat3"></p>
+          <p class="instruktionRuta"><i>Klicka utanför rutan för att gå vidare</i></p>
+        </div>
+      </section>
+      <section id="tipsRuta2" class="ruta">
+        <div class="ruta-content">
+          <p id="tipsRutaText">TIPS: Kolla noga vem avsändaren är, har stora företag verkligen gmail?</p>
+          <p class="instruktionRuta"><i>Klicka utanför rutan för att gå vidare</i></p>
+        </div>
+      </section>
+
+      <!--Här är email nummer 2-->
+      <article id="email4-body" style="display: none;" class="emailBodyClass2">
+        <header id="email4-header">
+            <p>Från: <span id="clickableText12" class="clickableTexts">anders.chef@icachef.com<span class="highlight-trigger" data-target="clickableText12">+</span></span><br>
+            Ämne: Viktig Meddelande: Uppdatera dina uppgifter
+            <img id="loggaEmail4" src="ICA_logo.svg.png" alt="ICA logga">
+            </p>
+        </header>
+        <div id="email4-content">
+         <section id="textEmail4">Hej kära kund, <br>
+           <br>
+           Vi har byggt om vårat<span id="clickableText13" class="clickableTexts"> system, detta <span class="highlight-trigger" data-target="clickableText13">+</span></span>innebär att alla kunder som vill fortsätta vara ICA-medlem måste uppdatera sina person- & bank -uppgifter för att fortsätta vara det. Vi ber så mycket om besväret och hoppas att ni uppdaterar era uppgifter.
+           <br>
+           För att uppdatera dina uppgifter följ länken till våran hemsida: <span id="clickableText14" class="clickableTexts"><u>www.ica.se</u><span class="highlight-trigger" data-target="clickableText14">+</span></span>
+           <div id="fakeURL4">http://defenitivtenscam.com</div>
+           <br>
+           <br>
+           <span id="clickableText15" class="clickableTexts">Vänliga hälsningar, Viaplay support<span class="highlight-trigger" data-target="clickableText15">+</span></span>
+         </section>
+        </div>
+      </article>
+
+      <section id="resultatRuta4" class="ruta">
+        <div class="ruta-content">
+          <p id="resultat4"></p>
+          <p class="instruktionRuta"><i>Klicka utanför rutan för att gå vidare</i></p>
+        </div>
+      </section>
+      <section id="resultatSumma" class="ruta">
+        <div class="ruta-content">
+            <p id="resultatSummaText"></p>
+            <p class="instruktionRuta"><i>Klicka utanför rutan för att gå vidare</i></p>
+        </div>
+      </section>
+
+      <!--Här är knappen som man klickar på för att komma vidare -->
+      <button id="resultatButton3">Klicka här om du är klar</button>
+      <button id="resultatButton4" style="display: none;">Klicka här om du är klar</button>
+
+    </main>
+
+    <!--För att ha en gemensam JS för alla så behöver vi gömma element som anropas i js men inte används i denna html-fil. Det verkar bli så när vi använder addeventlisteners.-->    <div id="clickableText24" style="display: none;"></div>
+    <div id="clickableText6" style="display: none;"></div>
+    <div id="clickableText3" style="display: none;"></div>
+    <button id="resultatButton1" style="display: none;"></button>
+    <button id="resultatButton2" style="display: none;"></button>
+    <button id="resultatButton5" style="display: none;"></button>
+    <button id="resultatButton6" style="display: none;"></button>
+    <div id="resultatRuta2" style="display: none;" class="ruta"></div>
+    <div id="resultatRuta6" style="display: none;" class="ruta"></div>
+    <div id="tipsRutaMeny" style="display: none;">
+      <p id="tipsTextMeny"></p>
+   </div>
+  <nav class="navbar" style="display: none;"> 
+    <ul id="menyVal">
+      <li><a href="#" id="tutorialBtn" style="display: none;">Kort beskrivning om spelet</a></li>
+        <li><a href="niva1.html" id="niva1Btn">Nivå 1</a></li>
+        <li><a href="niva2.html" id="niva2Btn" style="display: none;">Nivå 2</a></li>
+        <li><a href="niva3.html" id="niva3Btn" style="display: none;">Nivå 3</a></li>
+        <li><a href="slutprov.html" id="slutprovBtn" style="display: none;">Slutprov</a></li>
+    </ul>  
+ </nav>
+ <button id="ResetGameButton" style="display: none;">Starta om</button>
+ <span id="closeButton" style="display: none;">&times;</span>
+    
+</body>
+</html>

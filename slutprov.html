@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slutprov</title>
+    <script src="Js/jsnivaAlla.js"></script>
+    <script src="Js/jsSlutprov.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="Forstasida.html" class="tillbakaForstasida" id="tillbakaButton">Tillbaka till förstasidan</a>
+    <header>
+      <h2>Slutprov</h2>
+    </header>
+    <article id="slutprov-container">
+
+    </article>
+    <button id="nextMailBtn">Klicka för att låsa in svar och få upp nästa mail</button>
+
+
+
+
+    <!--För att ha en gemensam JS för alla så behöver vi gömma element som anropas i js men inte används i denna html-fil. Det verkar bli så när vi använder addeventlisteners.-->
+    <button id="resultatButton1" style="display: none;"></button>
+    <button id="resultatButton2" style="display: none;"></button>
+    <button id="resultatButton3" style="display: none;"></button>
+    <button id="resultatButton4" style="display: none;"></button>
+    <button id="resultatButton5" style="display: none;"></button>
+    <button id="resultatButton6" style="display: none;"></button>
+    <div id="resultatRuta2" style="display: none;" class="ruta"></div>
+    <div id="resultatRuta4" style="display: none;" class="ruta"></div>
+    <div id="resultatRuta6" style="display: none;" class="ruta"></div>
+      <div id="resultatSumma" class="ruta" style="display: none;">
+        <div class="ruta-content">
+            <p id="resultatSummaText"></p>
+            <p class="instruktionRuta"><i>Klicka utanför rutan för att gå vidare</i></p>
+        </div>
+    </div>
+    <div id="tipsRutaMeny" style="display: none;">
+        <p id="tipsTextMeny"></p>
+    </div>
+    <nav class="navbar" style="display: none;"> 
+        <ul id="menyVal">
+            <li><a href="niva1.html" id="niva1Btn">Nivå 1</a></li>
+            <li><a href="niva2.html" id="niva2Btn" style="display: none;">Nivå 2</a></li>
+            <li><a href="niva3.html" id="niva3Btn" style="display: none;">Nivå 3</a></li>
+            <li><a href="slutprov.html" id="slutprovBtn" style="display: none;">Slutprov</a></li>
+        </ul>  
+    </nav>
+    <button id="ResetGameButton" style="display: none;">Starta om</button>
+
+</body>
+</html>

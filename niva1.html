@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivå 1</title>
+    <script src="Js/jsnivaAlla.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!--Här är popup fönstret som kommer upp i slutet på varje nivå-->
+  <section id="popupCorrect1" style="display: none;">
+    <div class="popup">
+      <h2>Grattis!</h2>
+      <div class="content">
+        Du klarade nivå 1 och har därmed låst upp nivå 2!
+      </div>
+    </div>
+  </section>
+  <section id="popupIncorrect1" style="display: none;">
+    <div class="popup">
+      <div class="content">
+        Du måste få 5 rätt och 0 fel för att låsa upp nivå 2!
+      </div>
+    </div>
+  </section>
+
+  <a href="Forstasida.html" class="tillbakaForstasida" id="tillbakaButton">Tillbaka till förstasidan</a>
+    <main id="email" class="flex-container">
+
+      <!--Här är headern för varje nivå-->
+      <header id="headerWebbsida" class="headerOvanMail">
+        <div class="headerContentWrapper">
+        <h2 class="nivaText">Nivå 1</h2>
+        <p class="markeraText">Markera vart det ser suspekt ut i mailet</p>
+        </div>
+      </header>
+
+      <!--Här är email nummer 1-->
+      <article id="email1-body" class="emailBodyClass1">
+       <header id="email1-header">
+        <img id="loggaEmail1" src="postnord.png" alt="PostNord logga">
+       </header>
+       <div id="email1-content">
+       <p id="boldtextEmail1">Ditt paket väntar på dig.<br>
+        Ditt paket med <span id="clickableText1" class="clickableTexts">spårningsnummer: #SE-SAM32013<span class="highlight-trigger" data-target="clickableText1">+</span></span><br>
+        Paket har försökt levereras till dig.
+       </p>
+       <section id="textEmail1"><span id="clickableText2" class="clickableTexts">Vi har därför infört en avgift på 5 kronor.<span class="highlight-trigger" data-target="clickableText2">+</span></span> Detta är för att täcka eventuella extrakostnader för oss.<br>
+        <br>
+        Om paketet inte kommer att tas emot inom 7 arbetsdagar kan ökade kostnader tillkomma. 
+        Du kan hitta förfarandet och villkoren för paketets lagring i närmaste Postnord-kontor. För att betala denna avgift var vänligen betala här:
+       </section>
+       <span id="clickableText3" class="clickableTexts"><u>Klicka här för att betala</u><span class="highlight-trigger" data-target="clickableText3">+</span></span>
+       <div id="fakeURL1">http://bit.do/scamhehe</div>
+       </div>
+      </article>
+
+      <!--Här är resultat rutan och tips rutan -->
+      <section id="resultatRuta1" class="ruta">
+        <div class="ruta-content">
+          <p id="resultat1"></p>
+          <p class="instruktionRuta"><i>Klicka utanför rutan för att gå vidare</i></p>
+        </div>
+      </section>
+      <section id="tipsRuta1" class="ruta">
+        <div class="ruta-content">
+          <p id="tipsRutaText">Tips: Håll alltid muspekaren över en länk för att se vart den leder!</p>
+          <p class="instruktionRuta"><i>Klicka utanför rutan för att gå vidare</i></p>
+        </div>
+      </section>
+     
+
+      <!--Här är email nummer 2-->
+      <article id="email2-body" style="display: none;" class="emailBodyClass2">
+        <header id="email2-header">
+          <p>Ämne: Viktigt Meddelande: Uppdatering av ditt Netflix-konto</p>
+          <img id="loggaEmail2" src="Netflix-Logo.png" alt="Netflix logga">
+        </header>
+         <div id="email2-content">
+          <section id="textEmail2">
+            <span id="clickableText4" class="clickableTexts">Hej ,<span class="highlight-trigger" data-target="clickableText4">+</span></span><br>
+            Vi hoppas att detta meddelande når dig väl. <span id="clickableText5" class="clickableTexts">Vi vill informera dig om några viktiga förändringar <span class="highlight-trigger" data-target="clickableText5">+</span></span>som har genomförts på ditt Netflix-konto för att förbättra säkerheten och användarupplevelsen.<br>
+            <br>
+            För att fortsätta njuta av våra tjänster, vänligen klicka här för att verifiera och uppdatera dina kontouppgifter: 
+            <span id="clickableText6" class="clickableTexts"><u>kontouppgifter</u><span class="highlight-trigger" data-target="clickableText6">+</span></span>
+            <div id="fakeURL2">http://luradochbedragen.se</div>
+            <br>
+            <span id="clickableText7" class="clickableTexts">Du <b>måste</b> göra denna åtgärd för att säkerställa att ditt konto förblir aktivt och skyddat.<span class="highlight-trigger" data-target="clickableText7">+</span></span>
+            Vi värdesätter din lojalitet som Netflix-kund och ber om ursäkt för eventuella olägenheter som detta kan orsaka.<br>
+            <br>
+            Tack för din förståelse och samarbete.
+            <br>
+            Vänliga hälsningar, Netflix Support Team
+          </section>
+         </div>
+      </article>
+
+      <section id="resultatRuta2" class="ruta">
+        <div class="ruta-content">
+          <p id="resultat2"></p>
+          <p class="instruktionRuta"><i>Klicka utanför rutan för att gå vidare</i></p>
+        </div>
+      </section>
+      <section id="resultatSumma" class="ruta">
+        <div class="ruta-content">
+            <p id="resultatSummaText"></p>
+            <p class="instruktionRuta"><i>Klicka utanför rutan för att gå vidare</i></p>
+        </div>
+      </section>
+
+      <!--Här är knappen som man klickar på för att komma vidare -->
+      <button id="resultatButton1">Klicka här om du är klar</button>
+      <button id="resultatButton2" style="display: none;">Klicka här om du är klar</button>
+    </main>
+
+    
+
+    <!--För att ha en gemensam JS för alla så behöver vi gömma element som anropas i js men inte används i denna html-fil. Det verkar bli så när vi använder addeventlisteners.-->    <div id="clickableText8" style="display: none;"></div>
+    <div id="clickableText9" style="display: none;"></div>
+    <div id="clickableText11" style="display: none;"></div>
+    <div id="clickableText14" style="display: none;"></div>
+    <div id="clickableText24" style="display: none;"></div>
+    <button id="resultatButton3" style="display: none;"></button>
+    <button id="resultatButton4" style="display: none;"></button>
+    <button id="resultatButton5" style="display: none;"></button>
+    <button id="resultatButton6" style="display: none;"></button>
+    <div id="resultatRuta4" style="display: none;" class="ruta"></div>
+    <div id="resultatRuta6" style="display: none;" class="ruta"></div>
+    <div id="tipsRutaMeny" style="display: none;">
+     <div id="tipsTextMeny"></div>
+    </div>
+    <nav class="navbar" style="display: none;"> 
+      <ul id="menyVal">
+        <li><a href="#" id="tutorialBtn" style="display: none;">Kort beskrivning om spelet</a></li>
+        <li><a href="niva1.html" id="niva1Btn">Nivå 1</a></li>
+        <li><a href="niva2.html" id="niva2Btn" style="display: none;">Nivå 2</a></li>
+        <li><a href="niva3.html" id="niva3Btn" style="display: none;">Nivå 3</a></li>
+        <li><a href="slutprov.html" id="slutprovBtn" style="display: none;">Slutprov</a></li>
+      </ul> 
+    </nav>
+    <button id="ResetGameButton" style="display: none;">Starta om</button>
+    <span id="closeButton" style="display: none;">&times;</span>
+</body>
+</html>

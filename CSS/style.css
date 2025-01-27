@@ -1,0 +1,415 @@
+body{
+    background-image: url("SL-113022-54210-35.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0;
+    flex-direction: column;
+}
+#houseIcon{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+    /* Här kommer CSS för menyn*/
+#spelRuta{
+    width: 800px ;
+    height: 600px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    position:relative;
+    background: rgba(255, 255, 255, 0.2);
+ } 
+.navbar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.navbar li {
+    margin-top: 40px;
+    width: 100%;
+    cursor: pointer;
+}
+.navbar a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: "Kode Mono", monospace;
+    cursor: pointer;
+}
+.navbar li:hover {
+    color: aliceblue;
+    border-style: inherit;
+    background: white;
+    border-radius: 5px;
+}   
+#ResetGame{
+    height: 40px;
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+}
+#popupTutorial{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 500px;
+    width: 400px;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    font-family: "Kode Mono", monospace;
+}
+#tutorialContent {
+    position: relative;
+}
+#closeButton{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+/* Här kommer CSS för Headern i varje nivå*/
+.flex-container{
+    display: flex;
+    flex-direction: column;
+}
+.headerOvanMail{
+  background-color: #f0f0f0;
+  height: 50px;
+  border-radius: 2px;
+  align-items: center;
+}
+.nivaText{
+    background-color:darkgray;
+    width: 35%;
+    margin: 1px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.markeraText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    font-family: "Kode Mono", monospace;
+    font-size: 15px;
+}
+.headerContentWrapper {
+    display: flex;
+    width: 100%;
+}
+
+
+
+
+/* Här kommer den gemensamma CSS för alla nivåer*/
+.emailBodyClass1{
+    width: 800px;
+    height: 500px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    cursor:default;
+    user-select: none;
+    transition: box-shadow 0.3s;
+    position: relative;
+}
+.emailBodyClass2{
+    width: 800px;
+    height: 500px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    cursor:default;
+    user-select: none;
+    transition: box-shadow 0.3s;
+    position: relative;
+}
+.clickableTexts:hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;                                                                         
+}
+.clickableTexts{
+  position: relative;
+}
+#resultatButton1, #resultatButton2, #resultatButton3, #resultatButton4, #resultatButton5, #resultatButton6{
+    background-color: yellow;
+    height: 40px;
+    font-size: 20px;
+    font-family: "Kode Mono", monospace;
+}
+#resultatButton1:hover, #resultatButton2:hover, #resultatButton3:hover, #resultatButton4:hover, #resultatButton5:hover, #resultatButton6:hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    filter: brightness(85%);
+}
+.tillbakaForstasida {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    display: inline-block;
+    background-color: white; 
+    color: black;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.tillbakaForstasida:hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    filter: brightness(85%);
+}
+
+
+
+
+/* Här kommer CSS för unika delar i olika nivåer*/
+/* Tanken här var att kunna återanvända denna fakeURL och hover teknik för alla länkar.*/
+/* Men av någon anledning kunde det bara fungera på första mailet, så vi fick använda oss av lite Js på de övriga fakeURL*/
+#fakeURL1{
+    display: none;
+    position: absolute;
+    background-color: black;
+    color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+#fakeURL2{
+    display: none;
+    right:0;
+    top:335px;
+    position: absolute;
+    background-color: black;
+    color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+#fakeURL3{
+    display: none;
+    position: absolute;
+    right:330px;
+    top:265px;
+    background-color: black;
+    color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+#fakeURL4{
+    display: none;
+    position: absolute;
+    right:290px;
+    top:245px;
+    background-color: black;
+    color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+#fakeURL5{
+    display: none;
+    position: absolute;
+    right:290px;
+    top:505px;
+    background-color: black;
+    color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+#boldtextEmail1{
+    font-weight: bold;
+}
+#boldtextEmail5{
+    font-weight: bold;
+    font-size: 20px;
+}
+#loggaEmail2{
+    height: 150px;
+    width: 200px;
+}
+#loggaEmail3{
+    height: 65px;
+    width: 165px;
+}
+#loggaEmail5{
+    height: 125px;
+    width: 260px;
+}
+#loggaEmail4{
+    height: 60px;
+    padding: 10px;
+}
+#loggaEmail6{
+    height: 80px;
+    width: 150px;
+}
+#email5-content{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    text-align: center;
+}
+#email5-header{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    text-align: center;
+}
+#loggaPDF{
+    height: 20px;
+    width: 20px;
+}
+
+
+
+/* Här kommer CSS till highlight functionen och plusset */
+.highlight-trigger{
+    cursor: pointer;
+    position:absolute;
+    transform: translateX(-30%);
+    top:-20px;
+    font-size: 20px;
+    border-radius: 50%;
+    border: 1px solid #d3d3d3;
+    width:20px;
+    height:20px;
+    text-align: center;
+    font-weight: 100;
+}
+.highlight-trigger:hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.highlighted{
+    background-color: yellow;
+}
+
+
+/* Här kommer CSS för resultat ruta och tips ruta */
+.ruta {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.ruta-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    height: 150px;
+    border-radius: 5px;
+    user-select: none;
+}
+.instruktion {
+    font-size: 10px;
+    font-style: italic;
+    color: #666;
+    
+}
+#resultat1, #resultat2, #resultat3, #resultat4, #resultat5, #resultat6, #resultatSummaText{
+   font-size: 25px;
+   font-weight: 500;
+}
+#tipsRutaText{
+    font-size: 20px;
+    font-weight: bold;
+    user-select: none;
+}
+#tipsRutaMeny {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    top:20px; 
+    font-family: "Kode Mono", monospace;
+
+}
+
+#tipsTextMeny {
+    margin: 0;
+}
+
+/* Här kommer CSS för pop-up vid avklarad nivå, denna Css är lånad från https://codepen.io/RajaJaganathan/pen/dMxRrj*/
+
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 25%;
+    top: 0;
+    left: 36%;
+    position: absolute;
+    transition: all 5s ease-in-out;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    
+  }
+  
+  .popup .close:hover {
+    color: orange;
+    transform: rotate(90deg);
+  }
+  
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+
+/* Här är css:en till slutprovet*/
+  #slutprov-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    background-color: white;
+    border: 1px solid #ccc;
+    cursor:default;
+    user-select: none;
+    transition: box-shadow 0.3s;
+    position: relative;
+}
+#nextMailBtn{
+    padding: 10px;
+    margin-top: 20px;
+}

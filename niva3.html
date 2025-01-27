@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivå 3</title>
+    <script src="Js/jsnivaAlla.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!--Här är popup fönstret som kommer upp i slutet på varje nivå-->
+  <section id="popupCorrect3" style="display: none;">
+    <div class="popup">
+      <h2>Grattis!</h2>
+      <div class="content">
+        Du klarade nivå 3 och har därmed låst upp slutprovet!
+      </div>
+    </div>
+  </section>
+  <section id="popupIncorrect3" style="display: none;">
+    <div class="popup">
+      <div class="content">
+        Du måste få 6 rätt och 0 fel för att låsa upp slutprovet!
+      </div>
+    </div>
+  </section>
+
+  <a href="Forstasida.html" class="tillbakaForstasida" id="tillbakaButton">Tillbaka till förstasidan</a>
+    <main id="email" class="flex-container">
+
+      <!--Här är headern för varje nivå-->
+      <header id="headerWebbsida" class="headerOvanMail">
+        <div class="headerContentWrapper">
+        <h2 class="nivaText">Nivå 3</h2>
+        <p class="markeraText">Markera vart det ser suspekt ut i mailet</p>
+        </div>
+      </header>
+
+      <!--Här är email nummer 1-->
+      <article id="email5-body" class="emailBodyClass1">
+       <header id="email5-header">
+        <img id="loggaEmail5" src="1200px-Nordea.svg.png" alt="Nordea logga">
+       </header>
+       <div id="email5-content">
+        <p id="boldtextEmail5"><span id="clickableText16" class="clickableTexts">Ny inloggning från en enhet vi inte känner igen!<span class="highlight-trigger" data-target="clickableText16">+</span></span><br>
+        </p>
+        <section id="textEmail5"> 
+         Någon försöker logga in på ditt bankkonto digitalt från Motala, Sverige (IP-adress<br>217.210.32.202).
+         <br>
+         <br>
+         Vi har tillfälligt blockerat transaktioner från ditt konto tills du verifierar din identitet. 
+         <br>
+         För att Nordea inte ska stänga av ditt konto behöver du verifiera din identitet genom att skriva ut och fylla blanketten vi har bifogat i detta mail.
+         <br>
+         <br>
+         <span id="clickableText17" class="clickableTexts"><i>Om detta meddelande hamnar i din skräppost är det på grund av din internet leverantör. Var vänligen flytta detta mail till din inkorg.</i><span class="highlight-trigger" data-target="clickableText17">+</span></span>
+         <br>
+         <br>
+        </section>
+        <footer>
+         <span id="clickableText18" class="clickableTexts">Nordea Bank Abp, filial i Sverige <br>
+          Smålandsgatans 17, SE-105 71 Stockholm, Sweden<br>
+          Organisationsnummer:516411<br>
+          Nordea©2024<span class="highlight-trigger" data-target="clickableText18">+</span></span>
+        </footer>
+        <br>
+        <div id="pdfText">
+         <img id="loggaPDF" src="PDF_file_icon.svg.png" alt="PDF logga">
+         <span id="clickableText19" class="clickableTexts"><u>bifogadfil.pdf</u><span class="highlight-trigger" data-target="clickableText19">+</span></span>
+        </div>
+       </div>
+      </article>
+
+      
+      <!--Här är resultat rutan och tips rutan -->
+      <section id="resultatRuta5" class="ruta">
+        <div class="ruta-content">
+          <p id="resultat5"></p>
+          <p class="instruktionRuta"><i>Klicka utanför rutan för att gå vidare</i></p>
+        </div>
+      </section>
+      <section id="tipsRuta3" class="ruta">
+        <div class="ruta-content">
+          <p id="tipsRutaText">Tip: Var misstänksam när mailet innehåller suspekta förklaringar.</p>
+          <p class="instruktionRuta"><i>Klicka utanför rutan för att gå vidare</i></p>
+        </div>
+      </section>
+
+      <!--Här är email nummer 2-->
+      <article id="email6-body" style="display: none;" class="emailBodyClass2">
+        <header id="email6-header">
+          From: <span id="clickableText20" class="clickableTexts">confirm@ppservice.com<span class="highlight-trigger" data-target="clickableText20">+</span></span>
+        </header>
+        <img id="loggaEmail6" src="Paypal.png" alt="Paypal logga">
+        <div id="email6-content">
+          <h2>Uppdatering krävs!!</h2>
+          <section id="textEmail6"> Det har nyligen varit aktiviteter i ditt PayPal konto som är ovanliga jämfört med dina vanliga aktiviteter. 
+           Var god att logga in för att identifiera dig.
+           <br>
+           Det här är en del av våran säkerhets process och säkerställer att PayPal fortsätter att vara en säker väg att köpa online. Oftast är allt vi behöver bara lite mer information. Medans ditt konto är begränsat, kommer vissa tjänster inte vara tillgängliga för dig.
+           <br>
+           <b>Hur får jag bort min begränsning?</b>
+           <br>
+           <span id="clickableText21" class="clickableTexts">Du kan lösa detta problem genom att följa dessa enkla steg:<span class="highlight-trigger" data-target="clickableText21">+</span></span>
+           <br>
+           <ul>
+             <li style="margin-bottom: 15px;"><u>Logga in här</u></li>
+             <li>Skriv in den nödvändiga informationen. Ju snabbare du ger oss informationen desto snabbare kan vi lösa situationen.</li>     
+           </ul>
+           <br>
+           <span id="clickableText22" class="clickableTexts"><i>Om detta mail har skickats som skräppost, så är det bara ett fel av vårat nya system.</i><span class="highlight-trigger" data-target="clickableText22">+</span></span>
+           <br>
+           <br>
+           <span id="clickableText23" class="clickableTexts">Copyright © 1999-2024 PaypPal.<span class="highlight-trigger" data-target="clickableText23">+</span></span>
+           <br>
+           <br>
+           Om du inte är säker på varför du fick detta e-postmeddelandet 
+           <span id="clickableText24" class="clickableTexts"><u>klicka här</u><span class="highlight-trigger" data-target="clickableText24">+</span></span>
+           <div id="fakeURL5">http://bit.ly/2U5cdSDg6</div>
+          </section>
+         <br>
+        </div>
+      </article>
+
+      <section id="resultatRuta6" class="ruta">
+        <div class="ruta-content">
+          <p id="resultat6"></p>
+          <p class="instruktionRuta"><i>Klicka utanför rutan för att gå vidare</i></p>
+        </div>
+      </section>
+      <section id="resultatSumma" class="ruta">
+        <div class="ruta-content">
+            <p id="resultatSummaText"></p>
+            <p class="instruktionRuta"><i>Klicka utanför rutan för att gå vidare</i></p>
+        </div>
+      </section>
+
+      <!--Här är knappen som man klickar på för att komma vidare -->
+      <button id="resultatButton5">Klicka här om du är klar</button>
+      <button id="resultatButton6" style="display: none;">Klicka här om du är klar</button>
+    </main>
+
+     <!--För att ha en gemensam JS för alla så behöver vi gömma element som anropas men inte används i varje HTML, om vi inte har med ex clickabletext8 i niva1 blir det error -->
+    <button id="resultatButton1" style="display: none;"></button>
+    <button id="resultatButton2" style="display: none;"></button>
+    <button id="resultatButton3" style="display: none;"></button>
+    <button id="resultatButton4" style="display: none;"></button>
+    <div id="clickableText11" style="display: none;"></div>
+    <div id="clickableText14" style="display: none;"></div>
+    <div id="clickableText3" style="display: none;"></div>
+    <div id="clickableText6" style="display: none;"></div>
+    <div id="resultatRuta4" style="display: none;" class="ruta"></div>
+    <div id="resultatRuta2" style="display: none;" class="ruta"></div>
+    <div id="tipsRutaMeny" style="display: none;">
+      <p id="tipsTextMeny"></p>
+    </div>
+    <nav class="navbar" style="display: none;"> 
+     <ul id="menyVal">
+        <li><a href="#" id="tutorialBtn" style="display: none;">Kort beskrivning om spelet</a></li>
+        <li><a href="niva1.html" id="niva1Btn">Nivå 1</a></li>
+        <li><a href="niva2.html" id="niva2Btn" style="display: none;">Nivå 2</a></li>
+        <li><a href="niva3.html" id="niva3Btn" style="display: none;">Nivå 3</a></li>
+        <li><a href="slutprov.html" id="slutprovBtn" style="display: none;">Slutprov</a></li>
+     </ul>  
+    </nav>
+    <button id="ResetGameButton" style="display: none;">Starta om</button>
+    <span id="closeButton" style="display: none;">&times;</span>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the phish</title>
+    <script src="Js/jsnivaAlla.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button id="ResetGameButton">Starta om</button>
+    <section id="spelRuta">
+        <div id="tipsRutaMeny">
+            <p id="tipsTextMeny"></p>
+        </div>
+        
+        <div id="popupTutorial" style="display: none;">
+            <div id="tutorialContent">
+              <span id="closeButton">&times;</span>
+              <p>Detta spel går ut på att identifiera olika indikationer på att ett email kan vara en phishingattack. Det kommer att finnas delar av ett email som går att markera, om användaren anser att det är suspekt ska den markera det.
+                <br> <br>Spelaren kommer att börja på nivå 1, sedan måste spelaren klara nivå 1 för att låsa upp nivå 2 osv. Det finns en sista nivå som heter "slutprov", där användaren testas i alla de tidigare nivåerna.
+                <br> <br>Lycka till!
+                 </p>
+            </div>
+        </div>
+
+        <nav class="navbar"> 
+           <ul id="menyVal">
+              <li><a href="#" id="tutorialBtn">Short description about the game</a></li>
+              <li><a href="niva1.html" id="niva1Btn">Level 1</a></li>
+              <li><a href="niva2.html" id="niva2Btn" style="display: none;">Level 2</a></li>
+              <li><a href="niva3.html" id="niva3Btn" style="display: none;">Level 3</a></li>
+              <li><a href="slutprov.html" id="slutprovBtn" style="display: none;">Final Test</a></li>
+            </ul>  
+        </nav>
+    </section> 
+
+
+<!--För att ha en gemensam JS för alla så behöver vi gömma element som anropas i js men inte används i denna html-fil. Det verkar bli så när vi använder addeventlisteners.-->
+<div id="clickableText3" style="display: none;"></div>
+<div id="clickableText6" style="display: none;"></div>
+<div id="clickableText11" style="display: none;"></div>
+<div id="clickableText14" style="display: none;"></div>
+<div id="clickableText24" style="display: none;"></div>
+<button id="resultatButton1" style="display: none;"></button>
+<button id="resultatButton2" style="display: none;"></button>
+<button id="resultatButton3" style="display: none;"></button>
+<button id="resultatButton4" style="display: none;"></button>
+<button id="resultatButton5" style="display: none;"></button>
+<button id="resultatButton6" style="display: none;"></button>
+<div id="resultatRuta2" style="display: none;" class="ruta"></div>
+<div id="resultatRuta4" style="display: none;" class="ruta"></div>
+<div id="resultatRuta6" style="display: none;" class="ruta"></div>
+<div id="resultatSumma" class="ruta" style="display: none;">
+    <div class="ruta-content">
+        <p id="resultatSummaText"></p>
+        <p class="instruktionRuta"><i>Klicka utanför rutan för att gå vidare</i></p>
+    </div>
+</div>
+
+
+</body>
+</html>
